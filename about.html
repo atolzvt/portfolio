@@ -20,9 +20,9 @@
       
                 <ul id="nav-home" class="nav-links">
                   <li><a id="projects-nav" href="/index.html#projects">Projects</a></li>
-                  <li><a id="contact-nav" href="#contact">Contact</a></li>
-                  <li class="current"><a id="about-nav" href="/about.html">About</a></li>
+                  <li><a id="about-nav" href="/about.html" class="active-nav">About</a></li>
                   <li><a id="resume-nav" href="https://drive.google.com/file/d/13gPPTZxY9D5s2cPR5kbUb4KREJmbGSr1/view?usp=sharing" target="_blank">Resume</a></li>
+                  <li><a id="contact-nav" href="#contact">Contact</a></li>
                 </ul>
               </nav>
             </div> 
@@ -59,7 +59,7 @@
                         <br>
                         I love creating; for this, I switched into the experience design field from a bio-medical background.
                     </p>              
-                    <p>  
+                    <p class="lastp">  
                         As an entry-level designer I have lots to learn, but I'm confident in the skills 
                         I've gained so far on this journey and I'm open to opportunities to showcase and apply them, 
                         preferably within a team of talented individuals because I ultimately believe 'two is better than one'.
@@ -80,7 +80,36 @@
             </div>
         </section>
 
-        <script src="js/activate-section-nav.js"></script>
+        <script>
+            const contactNav = document.getElementById("contact-nav");
+            const about = document.getElementById("about-nav");
+            const csection = document.getElementById("contact");
+
+            const csectionOptions = {
+                
+            }
+
+            const csectionObserver = new IntersectionObserver
+            (function(
+                entries,
+                csectionObserver
+                ) {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                          contactNav.classList.add("active-nav"),
+                          about.classList.remove("active-nav");
+
+                        } else {
+                          contactNav.classList.remove("active-nav"),
+                          about.classList.add("active-nav");
+                        }
+                    })
+                },
+                csectionOptions);
+
+                csectionObserver.observe(csection);
+        
+        </script>
         <script src="js/sidebar.js"></script> 
     </body>
 </html>

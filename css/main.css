@@ -115,11 +115,6 @@ h5 {
           align-items: center;
 }
 
-.navbar .nav-container .active-nav {
-  color: var(--secondary-color) !important;
-  font-weight: bold;
-}
-
 .navbar .mobile-menu {
   cursor: pointer;
 }
@@ -309,9 +304,7 @@ ul {
 }
 
 .main-about .about-body .h4 {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 80px;
+  position: relative;
 }
 
 .proj-container {
@@ -336,7 +329,7 @@ ul {
       -ms-flex-align: start;
           align-items: flex-start;
   opacity: 1;
-  padding: 10%;
+  padding: 0% 10%;
   top: 10vh;
 }
 
@@ -477,11 +470,6 @@ nav .nav-links {
   margin-top: 2.5em;
 }
 
-nav .nav-links li.current {
-  font-weight: 700;
-  color: var(--secondary-color);
-}
-
 nav .nav-links li a {
   display: block;
   padding: 0.5em;
@@ -546,10 +534,6 @@ nav .nav-links li a:hover {
     display: -ms-flexbox;
     display: flex;
     margin: 0;
-  }
-  .navbar nav li.current a {
-    font-weight: 700;
-    color: var(--secondary-color);
   }
   .left-col {
     font-size: 1em;
@@ -667,13 +651,23 @@ nav .nav-links li a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding-bottom: 10%;
+  }
+  .main-about .about-body .h4 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90px;
+    margin-right: 2em;
+  }
+  .main-about .about-body .lastp {
+    margin-bottom: 0em;
   }
   .main-about img {
     display: block;
     max-width: 400px;
     margin: 3em 0em 2em;
   }
-  .main-about h4 {
+  .main-about .h4 {
     margin-top: 0.5em;
     margin-right: 2em;
   }
