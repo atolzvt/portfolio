@@ -18,10 +18,10 @@
                 <img id="mobile-exit" class="mobile-menu-exit" src="images/cancel.svg" alt="close-sidebar">
 
                 <ul class="nav-links">
-                    <li class="current"><a href="/index.html#projects">Projects</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="https://drive.google.com/file/d/13gPPTZxY9D5s2cPR5kbUb4KREJmbGSr1/view?usp=sharing" target="_blank">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li class="current"><a id="project-nav" href="/index.html#projects">Projects</a></li>
+                    <li><a id="about-nav" href="/about.html">About</a></li>
+                    <li><a id="resume-nav" href="https://drive.google.com/file/d/13gPPTZxY9D5s2cPR5kbUb4KREJmbGSr1/view?usp=sharing" target="_blank">Resume</a></li>
+                    <li><a id="contact-nav" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -231,7 +231,7 @@
 
     <script>
         const contactNav = document.getElementById("contact-nav");
-        const about = document.getElementById("about-nav");
+        //const project = document.getElementById("project-nav");
         const csection = document.getElementById("contact");
 
         const csectionOptions = {
@@ -245,12 +245,10 @@
             ) {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                      contactNav.classList.add("active-nav"),
-                      about.classList.remove("active-nav");
+                      contactNav.classList.add("active-nav");
 
                     } else {
-                      contactNav.classList.remove("active-nav"),
-                      about.classList.add("active-nav");
+                      contactNav.classList.remove("active-nav");
                     }
                 })
             },
