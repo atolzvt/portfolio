@@ -228,5 +228,37 @@
             </div>
         </div>
     </section>
+
+    <script>
+        const contactNav = document.getElementById("contact-nav");
+        const about = document.getElementById("about-nav");
+        const csection = document.getElementById("contact");
+
+        const csectionOptions = {
+            
+        }
+
+        const csectionObserver = new IntersectionObserver
+        (function(
+            entries,
+            csectionObserver
+            ) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                      contactNav.classList.add("active-nav"),
+                      about.classList.remove("active-nav");
+
+                    } else {
+                      contactNav.classList.remove("active-nav"),
+                      about.classList.add("active-nav");
+                    }
+                })
+            },
+            csectionOptions);
+
+            csectionObserver.observe(csection);
+    
+    </script>
+    <script src="js/sidebar.js"></script> 
 </body>
 </html>
