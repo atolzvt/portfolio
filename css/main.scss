@@ -94,11 +94,6 @@ h5 {
     justify-content: space-between;
     background: white;
     align-items: center;
-
-    .active-nav {
-      color: var(--secondary-color) !important;
-      font-weight: bold;
-    }
   }
 
   .mobile-menu {
@@ -269,8 +264,8 @@ ul {
     align-items: flex-start;
 
     .h4 {
-      position: sticky;
-      top: 80px;
+      position: relative;
+      //top: 80px;
     }
   }
 }
@@ -288,7 +283,7 @@ ul {
       width: 100%;
       align-items: flex-start;
       opacity: 1;
-      padding: 10%;
+      padding: 0% 10%;
       top: 10vh;
 
       img {
@@ -430,11 +425,6 @@ nav {
     display: block;
     margin-top: 2.5em;
 
-    li.current {
-      font-weight: 700;
-      color: var(--secondary-color);
-    }
-
     li {
       a {
         display: block;
@@ -499,11 +489,6 @@ nav {
     ul {
       display: flex;
       margin: 0;
-    }
-
-    li.current a {
-      font-weight: 700;
-      color: var(--secondary-color);
     }
   }
 
@@ -631,6 +616,15 @@ nav {
     }
     .about-body {
       flex-direction: row;
+      padding-bottom: 10%;
+      .h4 {
+        position: sticky;
+        top: 90px;
+        margin-right: 2em;
+      }
+      .lastp {
+        margin-bottom: 0em;
+      }
     }
     img {
       display: block;
@@ -638,7 +632,7 @@ nav {
       margin: 3em 0em 2em;
     }
 
-    h4 {
+    .h4 {
       margin-top: 0.5em;
       margin-right: 2em;
     }
