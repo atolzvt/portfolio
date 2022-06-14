@@ -32,6 +32,7 @@ h1 {
 
 h2 {
   font-size: 2em;
+  line-height: 120%;
   color: var(--primary-color);
 }
 
@@ -49,7 +50,7 @@ h4 {
 h5 {
   font-size: 1em;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 }
 
 .active-nav {
@@ -169,8 +170,8 @@ ul {
 
 .kahlo-body {
   padding: 160px 10% 50px;
-
-  img {
+  
+    img {
     width: 100%;
   }
 
@@ -197,8 +198,36 @@ ul {
     padding-bottom: 18px;
   }
 
+
   .sec {
-    padding-bottom: 15%;
+    padding-bottom: 8%;
+  }
+
+  .sec2 h3::after {
+    content: "";
+    color: aqua; 
+    background-color: var(--secondary-color);
+    display: block;
+    width: 20%;
+    height: 6px;
+  }
+
+  .impact h3::after {
+    content: "";
+    color: aqua; 
+    background-color: var(--secondary-color);
+    display: block;
+    width: 20%;
+    height: 6px;
+  }
+
+  .learnings h3::after {
+    content: "";
+    color: aqua; 
+    background-color: var(--secondary-color);
+    display: block;
+    width: 20%;
+    height: 6px;
   }
 
   .problem-section {
@@ -273,7 +302,15 @@ ul {
 .proj-container {
   position: relative;
 
+  .soon {
+    .h3 {
+      color: var(--neutral-color);
+      }
+
+  }
+
   li {
+
     .proj-wrap {
       position: static;
       top: auto;
@@ -341,6 +378,7 @@ ul {
       }
     }
   }
+
 }
 
 .link {
@@ -588,7 +626,7 @@ nav {
 
   .proj-container li .proj-wrap {
     flex-direction: row-reverse;
-    padding: 10% 50px 10% 10%;
+    padding: 4% 50px 4% 10%;
 
     .proj-desc {
       width: 35%;
@@ -605,11 +643,12 @@ nav {
     .proj-thumbnail {
       position: sticky;
       top: 10vh;
+      width: 750px;
     }
   }
 
   .main-about {
-    padding: 15%;
+    padding: 5% 15%;
     h1 {
       margin-top: 0px;
       font-size: 56px;
@@ -645,7 +684,7 @@ nav {
   }
 
   .proj-container li .proj-wrap {
-    padding: 10% 0px 10% 12%;
+    padding: 4% 0px 4% 12%;
 
     .proj-desc {
       position: sticky;
