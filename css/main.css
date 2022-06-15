@@ -132,7 +132,7 @@ a:hover {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-left: 5%;
 }
 
 .hero-section {
@@ -285,7 +285,7 @@ ul {
 
 .kahlo-body iframe {
   width: 80%;
-  height: 850px;
+  height: 450px;
   margin-left: 10%;
 }
 
@@ -294,7 +294,7 @@ ul {
 }
 
 .kahlo-body ul p {
-  padding: 0;
+  padding-left: 0;
 }
 
 .kahlo-body .conclusion h5 {
@@ -490,7 +490,7 @@ nav.menu-drop {
 nav {
   position: fixed;
   z-index: 999;
-  width: 89%;
+  width: 85%;
   right: 0;
   top: 0;
   padding: 1em;
@@ -501,6 +501,7 @@ nav {
 nav .nav-links {
   display: block;
   margin-top: 2.5em;
+  padding-left: 0%;
 }
 
 nav .nav-links li a {
@@ -520,9 +521,38 @@ nav .nav-links li a:hover {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 490px) {
-  h1 {
-    font-size: 2.6em;
+@media only screen and (max-width: 490px) {
+  .navbar {
+    padding-top: .4em;
+    padding-bottom: .4em;
+  }
+  .hero-section .hero-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .proj-container ul {
+    padding-left: 0%;
+  }
+  .proj-container ul li .proj-wrap {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .contact-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .kahlo-body {
+    padding: 100px 5% 50px;
+  }
+  .kahlo-body h2 {
+    font-size: 1.4em;
+  }
+  .kahlo-body iframe {
+    height: 450px;
+  }
+  .main-about {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
@@ -583,10 +613,6 @@ nav .nav-links li a:hover {
   #contact {
     padding-left: 10%;
   }
-  .conclusion {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
   .right-col {
     margin-bottom: 100px;
   }
@@ -633,17 +659,10 @@ nav .nav-links li a:hover {
     padding-left: 10%;
     padding-top: 10px;
   }
-  .problem-section {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  .sol-section h2 {
+  .sol-section h2, .solly {
     padding-left: 10%;
   }
-  .solly {
-    padding-left: 10%;
-  }
-  .process {
+  .process, .conclusion, .problem-section {
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -751,6 +770,9 @@ nav .nav-links li a:hover {
   .contact-container {
     padding: 150px 10%;
   }
+  iframe {
+    height: 1050px;
+  }
 }
 
 @media only screen and (min-width: 1700px) {
@@ -821,6 +843,9 @@ nav .nav-links li a:hover {
   }
   .main-about p {
     margin-left: 0px;
+  }
+  .kahlo-body .proj-context {
+    padding-right: 0px;
   }
 }
 /*# sourceMappingURL=main.css.map */
