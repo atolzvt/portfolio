@@ -32,6 +32,7 @@ h1 {
 
 h2 {
   font-size: 2em;
+  line-height: 120%;
   color: var(--primary-color);
 }
 
@@ -229,7 +230,7 @@ ul {
 }
 
 .kahlo-body .sec {
-  padding-bottom: 15%;
+  padding-bottom: 5%;
 }
 
 .kahlo-body .problem-section {
