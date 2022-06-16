@@ -304,7 +304,10 @@ ul {
 
 .proj-container {
   position: relative;
-
+  ul {
+    padding-left: 0%;
+  }
+  
   .soon {
     .h3 {
       color: var(--neutral-color);
