@@ -153,7 +153,7 @@ ul {
 
     .img-portrait {
       display: none;
-      width: 250px;
+      width: 100%;
     }
 
     .soc-icons-links {
@@ -163,6 +163,15 @@ ul {
 
       a {
         padding: 1em;
+
+        img {
+          padding: 4px;
+          border-radius: 6px;
+          
+          &:hover {
+            box-shadow: var(--secondary-color) 0px 8px 24px;
+          }
+        }
       }
     }
   }
@@ -451,6 +460,15 @@ ul {
   }
 }
 
+.footer-section p{
+  padding-left: 10%;
+  padding-right: 10%;
+  display: block;
+  text-align: center;
+  font-size: .8em;
+  padding-bottom: 0px;
+}
+
 nav.menu-drop {
   display: block;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -513,6 +531,11 @@ nav {
   }
 
   .contact-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .footer-section p{
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -583,14 +606,16 @@ nav {
     font-size: 2.9em;
   }
   
-  
-
   h5 {
     font-size: 1.2em;
   }
 
   section {
     padding: 0px 5% 90px;
+  }
+
+  .footer-section {
+    padding-bottom: 0px;
   }
 
   #contact {
@@ -774,9 +799,6 @@ nav {
     padding: 0%;
   }
 
-  img {
-    padding-bottom: 30px;
-  }
   p {
     max-width: 850px;
     margin-left: 10%;
@@ -789,8 +811,7 @@ nav {
 
     .right-col {
       margin-bottom: 0px;
-      margin-left: 1em;
-      padding-left: 1em;
+      padding-top: 1em;
     }
 
     .left-col {
@@ -802,7 +823,6 @@ nav {
 
     .img-portrait {
       display: inline-block;
-      margin: 1em;
     }
   }
 
@@ -845,5 +865,11 @@ nav {
 
   .kahlo-body .proj-context {
     padding-right: 0px;
+  }
+
+  .footer-section p{
+    padding: 0%;
+    margin: 0%;
+    margin-left: 20%;
   }
 }

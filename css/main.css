@@ -183,7 +183,7 @@ ul {
 
 .hero-section .right-col .img-portrait {
   display: none;
-  width: 250px;
+  width: 100%;
 }
 
 .hero-section .right-col .soc-icons-links {
@@ -196,6 +196,16 @@ ul {
 
 .hero-section .right-col .soc-icons-links a {
   padding: 1em;
+}
+
+.hero-section .right-col .soc-icons-links a img {
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.hero-section .right-col .soc-icons-links a img:hover {
+  -webkit-box-shadow: var(--secondary-color) 0px 8px 24px;
+          box-shadow: var(--secondary-color) 0px 8px 24px;
 }
 
 .kahlo-body {
@@ -487,6 +497,15 @@ ul {
   cursor: pointer;
 }
 
+.footer-section p {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: block;
+  text-align: center;
+  font-size: .8em;
+  padding-bottom: 0px;
+}
+
 nav.menu-drop {
   display: block;
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -544,6 +563,10 @@ nav .nav-links li a:hover {
     padding-right: 5%;
   }
   .contact-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .footer-section p {
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -615,6 +638,9 @@ nav .nav-links li a:hover {
   }
   section {
     padding: 0px 5% 90px;
+  }
+  .footer-section {
+    padding-bottom: 0px;
   }
   #contact {
     padding-left: 10%;
@@ -787,9 +813,6 @@ nav .nav-links li a:hover {
     margin-left: 12%;
     padding: 0%;
   }
-  img {
-    padding-bottom: 30px;
-  }
   p {
     max-width: 850px;
     margin-left: 10%;
@@ -807,8 +830,7 @@ nav .nav-links li a:hover {
   }
   .hero-section .hero-container .right-col {
     margin-bottom: 0px;
-    margin-left: 1em;
-    padding-left: 1em;
+    padding-top: 1em;
   }
   .hero-section .hero-container .left-col h1 {
     font-size: 3.6em;
@@ -816,7 +838,6 @@ nav .nav-links li a:hover {
   }
   .hero-section .hero-container .img-portrait {
     display: inline-block;
-    margin: 1em;
   }
   .proj-section {
     padding-right: 0%;
@@ -852,6 +873,11 @@ nav .nav-links li a:hover {
   }
   .kahlo-body .proj-context {
     padding-right: 0px;
+  }
+  .footer-section p {
+    padding: 0%;
+    margin: 0%;
+    margin-left: 20%;
   }
 }
 /*# sourceMappingURL=main.css.map */
